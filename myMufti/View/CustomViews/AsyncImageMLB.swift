@@ -14,27 +14,30 @@ struct AsyncImageMLB: View {
     var body: some View {
         
         AsyncImage(
-             url: url,
-             transaction: Transaction(animation: .easeInOut)
-         ) { phase in
-             switch phase {
-             case .empty:
-//                     ProgressView()
-                 Image(ImageName.person_placeholder.rawValue)
-                                .resizable()
-                                .frame(width: 25, height: 25)
-                                .padding(10)
-                                .clipShape(Circle())
-             case .success(let image):
-                 image
-                     .resizable()
-                     .transition(.scale(scale: 0.1, anchor: .center))
-             case .failure:
-                 Image(systemName: "wifi.slash")
-             @unknown default:
-                 EmptyView()
-             }
-         }
+            url: url,
+            transaction: Transaction(animation: .easeInOut)
+        ) { phase in
+            switch phase {
+            case .empty:
+                //                     ProgressView()
+                Image(systemName: "person.circle")
+                    .foregroundColor(.black)
+                    .padding(10)
+                
+            case .success(let image):
+                image
+                    .resizable()
+                    .transition(.scale(scale: 0.1, anchor: .center))
+            case .failure:
+                //                 Image(systemName: "wifi.slash")
+                Image(systemName: "person.circle")
+                    .foregroundColor(.black)
+                    .padding(10)
+                
+            @unknown default:
+                EmptyView()
+            }
+        }
     }
 }
 

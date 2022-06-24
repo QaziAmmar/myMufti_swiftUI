@@ -91,6 +91,17 @@
 		7A5BDF4E28648418001676B4 /* CreateNewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BDF4D28648418001676B4 /* CreateNewPasswordView.swift */; };
 		7A5BDF5128648C39001676B4 /* CreateNewPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BDF5028648C39001676B4 /* CreateNewPasswordViewModel.swift */; };
 		7A5BDF5328649DD7001676B4 /* MeetingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BDF5228649DD7001676B4 /* MeetingModel.swift */; };
+		7AD24D002865869B0056EE6D /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24CFF2865869B0056EE6D /* PrivacyPolicyView.swift */; };
+		7AD24D0328658CFE0056EE6D /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24D0228658CFE0056EE6D /* HelpView.swift */; };
+		7AD24D0628658D150056EE6D /* HelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24D0528658D150056EE6D /* HelpViewModel.swift */; };
+		7AD24D09286597560056EE6D /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24D08286597560056EE6D /* ActivityViewController.swift */; };
+		7AD24D0C2865C71F0056EE6D /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24D0B2865C71F0056EE6D /* HistoryView.swift */; };
+		7AD24D102865C7630056EE6D /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24D0F2865C7630056EE6D /* HistoryViewModel.swift */; };
+		7AD24D132865C7EA0056EE6D /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24D122865C7EA0056EE6D /* HistoryModel.swift */; };
+		7AD24D162865C9E20056EE6D /* HistoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24D152865C9E20056EE6D /* HistoryRow.swift */; };
+		7AD24D192865D3DF0056EE6D /* AskMuftiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24D182865D3DF0056EE6D /* AskMuftiViewModel.swift */; };
+		7AD24D1B2865DB2F0056EE6D /* MuftiRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24D1A2865DB2F0056EE6D /* MuftiRow.swift */; };
+		7AD24D1F2865DFFE0056EE6D /* MuftiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24D1E2865DFFE0056EE6D /* MuftiModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -176,6 +187,17 @@
 		7A5BDF4D28648418001676B4 /* CreateNewPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPasswordView.swift; sourceTree = "<group>"; };
 		7A5BDF5028648C39001676B4 /* CreateNewPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPasswordViewModel.swift; sourceTree = "<group>"; };
 		7A5BDF5228649DD7001676B4 /* MeetingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingModel.swift; sourceTree = "<group>"; };
+		7AD24CFF2865869B0056EE6D /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
+		7AD24D0228658CFE0056EE6D /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		7AD24D0528658D150056EE6D /* HelpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewModel.swift; sourceTree = "<group>"; };
+		7AD24D08286597560056EE6D /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		7AD24D0B2865C71F0056EE6D /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		7AD24D0F2865C7630056EE6D /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		7AD24D122865C7EA0056EE6D /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
+		7AD24D152865C9E20056EE6D /* HistoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRow.swift; sourceTree = "<group>"; };
+		7AD24D182865D3DF0056EE6D /* AskMuftiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMuftiViewModel.swift; sourceTree = "<group>"; };
+		7AD24D1A2865DB2F0056EE6D /* MuftiRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuftiRow.swift; sourceTree = "<group>"; };
+		7AD24D1E2865DFFE0056EE6D /* MuftiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuftiModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,15 +341,15 @@
 			isa = PBXGroup;
 			children = (
 				7A2A9B4F28608EED00224E2D /* CustomViews */,
-				7A2A9B732860906C00224E2D /* Profile */,
-				7A5BDF1B2861C71D001676B4 /* ViewsInProfile */,
-				7A2FBC0D2860A83100E3925F /* Home */,
-				7A2FBC0E2860A83500E3925F /* AskMufti */,
-				7A2FBC0F2860A83A00E3925F /* Chat */,
-				7A2A9B7A286090E800224E2D /* ForgotPassword */,
-				7A2A9B6928608FB100224E2D /* TabBarController */,
 				7A2A9B7D2860911000224E2D /* SignUp */,
 				7A2A9B6528608F4C00224E2D /* Login */,
+				7A2A9B6928608FB100224E2D /* TabBarController */,
+				7A2FBC0D2860A83100E3925F /* Home */,
+				7A2FBC0F2860A83A00E3925F /* Chat */,
+				7A2A9B732860906C00224E2D /* Profile */,
+				7A5BDF1B2861C71D001676B4 /* ViewsInProfile */,
+				7A2FBC0E2860A83500E3925F /* AskMufti */,
+				7A2A9B7A286090E800224E2D /* ForgotPassword */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -335,6 +357,7 @@
 		7A2A9B4F28608EED00224E2D /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				7AD24D08286597560056EE6D /* ActivityViewController.swift */,
 				7A5BDF172861B05A001676B4 /* Buttons */,
 				7A2A9B5028608EED00224E2D /* LoginInHeaderView.swift */,
 				7A2A9B5228608EED00224E2D /* HideNavbarOf.swift */,
@@ -483,6 +506,9 @@
 			isa = PBXGroup;
 			children = (
 				7A2FBC142860A89F00E3925F /* AskMuftiView.swift */,
+				7AD24D1C2865DB350056EE6D /* MuftiRowViw */,
+				7AD24D1D2865DFE90056EE6D /* MuftiModel */,
+				7AD24D172865D3C70056EE6D /* ViewModel */,
 			);
 			path = AskMufti;
 			sourceTree = "<group>";
@@ -549,6 +575,9 @@
 		7A5BDF1B2861C71D001676B4 /* ViewsInProfile */ = {
 			isa = PBXGroup;
 			children = (
+				7AD24D0A2865C70D0056EE6D /* History */,
+				7AD24D0128658CEC0056EE6D /* Help */,
+				7AD24CFE2865868B0056EE6D /* PrivacyPolicy */,
 				7A5BDF36286455C7001676B4 /* Meetings */,
 				7A5BDF262861E656001676B4 /* MyQueries */,
 				7A5BDF1C2861C74C001676B4 /* Notifications */,
@@ -705,6 +734,90 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		7AD24CFE2865868B0056EE6D /* PrivacyPolicy */ = {
+			isa = PBXGroup;
+			children = (
+				7AD24CFF2865869B0056EE6D /* PrivacyPolicyView.swift */,
+			);
+			path = PrivacyPolicy;
+			sourceTree = "<group>";
+		};
+		7AD24D0128658CEC0056EE6D /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				7AD24D0228658CFE0056EE6D /* HelpView.swift */,
+				7AD24D0428658D050056EE6D /* ViewModel */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		7AD24D0428658D050056EE6D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7AD24D0528658D150056EE6D /* HelpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7AD24D0A2865C70D0056EE6D /* History */ = {
+			isa = PBXGroup;
+			children = (
+				7AD24D0B2865C71F0056EE6D /* HistoryView.swift */,
+				7AD24D142865C8F40056EE6D /* HistoryRow */,
+				7AD24D112865C7D80056EE6D /* Model */,
+				7AD24D0D2865C7450056EE6D /* ViewModel */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		7AD24D0D2865C7450056EE6D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7AD24D0F2865C7630056EE6D /* HistoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7AD24D112865C7D80056EE6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7AD24D122865C7EA0056EE6D /* HistoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AD24D142865C8F40056EE6D /* HistoryRow */ = {
+			isa = PBXGroup;
+			children = (
+				7AD24D152865C9E20056EE6D /* HistoryRow.swift */,
+			);
+			path = HistoryRow;
+			sourceTree = "<group>";
+		};
+		7AD24D172865D3C70056EE6D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7AD24D182865D3DF0056EE6D /* AskMuftiViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7AD24D1C2865DB350056EE6D /* MuftiRowViw */ = {
+			isa = PBXGroup;
+			children = (
+				7AD24D1A2865DB2F0056EE6D /* MuftiRow.swift */,
+			);
+			path = MuftiRowViw;
+			sourceTree = "<group>";
+		};
+		7AD24D1D2865DFE90056EE6D /* MuftiModel */ = {
+			isa = PBXGroup;
+			children = (
+				7AD24D1E2865DFFE0056EE6D /* MuftiModel.swift */,
+			);
+			path = MuftiModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -807,19 +920,25 @@
 				7A5BDF4E28648418001676B4 /* CreateNewPasswordView.swift in Sources */,
 				7A2A9B6C28608FB100224E2D /* TabBarControllerView.swift in Sources */,
 				7A2A9B5D28608EED00224E2D /* HideNavbarOf.swift in Sources */,
+				7AD24D09286597560056EE6D /* ActivityViewController.swift in Sources */,
 				7A5BDF33286214CD001676B4 /* RoundedCorner.swift in Sources */,
 				7A2A9B3828608E5900224E2D /* UserDefaultManager.swift in Sources */,
+				7AD24D0328658CFE0056EE6D /* HelpView.swift in Sources */,
 				7A5BDF162861AC74001676B4 /* ChangeUserName.swift in Sources */,
 				7A2A9B4028608E5900224E2D /* Constants.swift in Sources */,
 				7A2A9B3B28608E5900224E2D /* DateManager.swift in Sources */,
 				7A2A9B722860904F00224E2D /* User.swift in Sources */,
 				7A2A9B5B28608EED00224E2D /* LoginInHeaderView.swift in Sources */,
 				7A2A9B6228608EED00224E2D /* NavBar.swift in Sources */,
+				7AD24D102865C7630056EE6D /* HistoryViewModel.swift in Sources */,
+				7AD24D1F2865DFFE0056EE6D /* MuftiModel.swift in Sources */,
 				7A2A9B812860911000224E2D /* SignUpViewModel.swift in Sources */,
 				7A5BDF2E2861E8B1001676B4 /* MyQueryModel.swift in Sources */,
 				7A5BDF3A28645607001676B4 /* MeetingView.swift in Sources */,
 				7A2A9B6428608EED00224E2D /* CustomDivider.swift in Sources */,
+				7AD24D0C2865C71F0056EE6D /* HistoryView.swift in Sources */,
 				7A2A9B5E28608EED00224E2D /* SearchBar.swift in Sources */,
+				7AD24D132865C7EA0056EE6D /* HistoryModel.swift in Sources */,
 				7A2A9B3928608E5900224E2D /* ImagePicker.swift in Sources */,
 				7A5BDF5128648C39001676B4 /* CreateNewPasswordViewModel.swift in Sources */,
 				7A2A9B6828608F6100224E2D /* LoginView.swift in Sources */,
@@ -829,6 +948,7 @@
 				7A2A9B5F28608EED00224E2D /* CustomTextField.swift in Sources */,
 				7A2FBC152860A89F00E3925F /* AskMuftiView.swift in Sources */,
 				7A2A9B3E28608E5900224E2D /* TFPlaceHolderExtension.swift in Sources */,
+				7AD24D1B2865DB2F0056EE6D /* MuftiRow.swift in Sources */,
 				7A2A9B6028608EED00224E2D /* GSignInViewModel.swift in Sources */,
 				7A5BDF312861F521001676B4 /* MyQueryRow.swift in Sources */,
 				7A5BDF112861AC6D001676B4 /* ChangePasswordView.swift in Sources */,
@@ -837,12 +957,14 @@
 				7A5BDF222861D1C7001676B4 /* NotificationRow.swift in Sources */,
 				7A2A9B3F28608E5900224E2D /* UIImageExt.swift in Sources */,
 				7A2A9B6128608EED00224E2D /* GSignInButton.swift in Sources */,
+				7AD24D002865869B0056EE6D /* PrivacyPolicyView.swift in Sources */,
 				7A2A9B1B28608DF900224E2D /* ContentView.swift in Sources */,
 				7A2FBC172860A8A800E3925F /* Chat.swift in Sources */,
 				7A5BDF152861AC74001676B4 /* ChangeUserNameViewModel.swift in Sources */,
 				7A5BDF102861AC6D001676B4 /* ChangePasswordViewModel.swift in Sources */,
 				7A5BDF452864667C001676B4 /* ForgotEmailViewModel.swift in Sources */,
 				7A2A9B79286090AC00224E2D /* LoginViewModel.swift in Sources */,
+				7AD24D162865C9E20056EE6D /* HistoryRow.swift in Sources */,
 				7A5BDF2B2861E69F001676B4 /* MyQueriesViewModel.swift in Sources */,
 				7A2FBC1C28619BB500E3925F /* ProfileViewModel.swift in Sources */,
 				7A2A9B4128608E5900224E2D /* Validators.swift in Sources */,
@@ -854,6 +976,7 @@
 				7A5BDF282861E669001676B4 /* MyQuriesView.swift in Sources */,
 				7A2A9B3D28608E5900224E2D /* AlignmentExt.swift in Sources */,
 				7A5BDF192861B064001676B4 /* GreenButton.swift in Sources */,
+				7AD24D0628658D150056EE6D /* HelpViewModel.swift in Sources */,
 				7A5BDF4B28646ADA001676B4 /* OTPViewModel.swift in Sources */,
 				7A2FBC132860A89400E3925F /* HomeView.swift in Sources */,
 				7A2A9B3C28608E5900224E2D /* ColorExtension.swift in Sources */,
@@ -861,6 +984,7 @@
 				7A2A9B1928608DF900224E2D /* myMuftiApp.swift in Sources */,
 				7A5BDF252861D800001676B4 /* NotificationViewModel.swift in Sources */,
 				7A5BDF3528644EB7001676B4 /* AsyncImageMLB.swift in Sources */,
+				7AD24D192865D3DF0056EE6D /* AskMuftiViewModel.swift in Sources */,
 				7A5BDF1E2861C7A4001676B4 /* NotificationView.swift in Sources */,
 				7A2A9B6328608EED00224E2D /* InstructionText.swift in Sources */,
 				7A5BDF5328649DD7001676B4 /* MeetingModel.swift in Sources */,

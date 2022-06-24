@@ -15,11 +15,11 @@ class DateManager {
     func monthNameWithDate(strDate: String) -> String {
         
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let date = formatter.date(from: strDate) ?? Date()
 
         let outformatter = DateFormatter()
-        outformatter.dateFormat = "MMMM d yyyy"
+        outformatter.dateFormat = "d MMM"
         return outformatter.string(from: date)
     }
     
@@ -29,6 +29,7 @@ class DateManager {
         let date = formatter.date(from: strDate) ?? Date()
         return timeAgoDisplay(from: date)
     }
+    
     
     
     func timeAgoDisplay(from date: Date) -> String {

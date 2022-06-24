@@ -15,6 +15,9 @@ struct ProfileView: View {
     @State private var movetoChangeUserName = false
     @State private var movetoChangePassword = false
     @State private var showImagePicker = false
+    @State private var isSharePresented: Bool = false
+    
+    let items = [URL(string: "https://www.apple.com")!]
     
     
     var body: some View {
@@ -35,6 +38,13 @@ struct ProfileView: View {
                 vm.updateImage(image: image)
             }
         })
+        .sheet(isPresented: $isSharePresented, onDismiss: {
+            print("Dismiss")
+        }, content: {
+            ActivityViewController(activityItems: [URL(string: "https://www.apple.com")!])
+        })
+        
+        
     }
 }
 
@@ -78,32 +88,21 @@ extension ProfileView {
                 
                 VStack(spacing: 0) {
                     
-                    
                     ProfileRow(label: "Categories",
-                               destination: HideNavbarOf(view: Text("My Queries") ) )
-                    
-                    ProfileRow(label: "Share / Invite",
-                               destination: HideNavbarOf(view: Text("My Queries")) )
+                               destination: HideNavbarOf(view: Text("Categories") ))
+                    shareBtn
                     
                     ProfileRow(label: "Privacy Policy",
-                               destination: HideNavbarOf(view: Text("My Queries")) )
+                               destination: HideNavbarOf(view: PrivacyPolicyView() ))
                     
                     ProfileRow(label: "Help & Feedback",
-                               destination: HideNavbarOf(view: Text("My Queries") ) )
+                               destination: HideNavbarOf(view: HelpView() ) )
                     
                 }.padding(.bottom)
                 //
                 VStack(spacing: 0) {
                     premiumBtn
                 }.padding(.bottom)
-                
-                
-                
-                //                if !(UserDefaultManager.shared.get()?.isSocialUser ?? false) {
-                //                    ProfileRow(label: "Change Password") {
-                //                        movetoChangePassword.toggle()
-                //                    }
-                //                }
                 
                 logOutBtn
                     .padding(.bottom)
@@ -202,6 +201,40 @@ extension ProfileView {
                         .background(Color.gray)
                 }
                 
+            }
+            .frame(height: 56)
+        }
+    }
+    
+    private var shareBtn: some View {
+        
+        Button  {
+            self.isSharePresented.toggle()
+        } label: {
+            ZStack(alignment: .center) {
+                
+                Rectangle()
+                    .foregroundColor(.white)
+                VStack {
+                    Spacer()
+                    HStack {
+                        Text("Share / Invite")
+                            .font(.custom(Popins.regular.rawValue, size: 16))
+                            .foregroundColor(.black)
+                            
+                        Spacer()
+
+                        Image(systemName: "chevron.forward")
+                            .foregroundColor(.black)
+
+                    }
+                    .padding([.leading, .trailing])
+                    Spacer()
+                    Divider()
+                        .frame(height: 0.4)
+                        .background(Color.gray.opacity(0.5))
+                }
+            
             }
             .frame(height: 56)
         }

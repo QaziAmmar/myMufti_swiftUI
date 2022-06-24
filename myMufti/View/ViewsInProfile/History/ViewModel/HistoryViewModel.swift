@@ -1,20 +1,18 @@
 //
-//  MeetingViewModel.swift
+//  HistoryViewModel.swift
 //  myMufti
 //
-//  Created by Qazi Ammar Arshad on 23/06/2022.
+//  Created by Qazi Ammar Arshad on 24/06/2022.
 //
 
 import Foundation
 
-
-class MeetingViewModel: ObservableObject {
+class HistoryViewModel: ObservableObject {
     
     
-    @Published var meetings = [Meeting]()
+    @Published var history_array = [History]()
     @Published var showError = false
     var errorMessage = ""
-    
     
     
     func showError(message: String) {
@@ -25,25 +23,24 @@ class MeetingViewModel: ObservableObject {
 
 
 // MARK: - Network Extension
-extension MeetingViewModel {
+extension HistoryViewModel {
     
-     func callMyMeetingAPI() {
+     func historyApi() {
         
         let user_id = UserDefaultManager.shared.userId
         let endPoint = "Users/meetings?id=" + user_id
          
 
-        NetworkManager.shared.URLrequest(endPointURL: endPoint, methodType: .get, parametres: nil, returnType: MeetingModel.self) { data, statusCode in
+        NetworkManager.shared.URLrequest(endPointURL: endPoint, methodType: .get, parametres: nil, returnType: HistoryModel.self) { data, statusCode in
             
-            if let meetingModel = data as? MeetingModel {
+            if let historyModel = data as? HistoryModel {
                 
-                if meetingModel.status == true {
+                if historyModel.status == true {
                     // perform all user defaults handing coding here
-                    
-                    self.meetings = meetingModel.meetings
+                    self.history_array = historyModel.histories
                     
                 } else {
-                    self.showError(message: meetingModel.message)
+                    self.showError(message: historyModel.message)
                 }
             }
             

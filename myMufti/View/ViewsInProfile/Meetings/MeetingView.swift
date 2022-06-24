@@ -30,10 +30,14 @@ extension MeetingView {
             
             ScrollView {
             
-                ForEach(vm.meetings) { meeting in
-                    VStack {
-                        MeetingRow()
-                        MeetingRow()
+                if vm.meetings.count == 0 {
+                    Text("No Meeting Found")
+                        .font(.custom(Popins.regular.rawValue, size: 24))
+                } else {
+                    ForEach(vm.meetings) { meeting in
+                        VStack {
+                            MeetingRow(meeting: meeting)
+                        }
                     }
                 }
             }

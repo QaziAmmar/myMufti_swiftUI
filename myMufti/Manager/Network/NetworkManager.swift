@@ -19,7 +19,7 @@ class NetworkManager {
     typealias apiFailure = (_ errorString: String) -> ()
 
     static let baseUrl = "http://mymufti.megaxtudio.com/"
-    static let mediaURL = "https://battlerapordie.com/"
+    static let mediaURL = "http://mymufti.megaxtudio.com/assets/images/"
     private func getHeaders () -> HTTPHeaders?{
         
         var header : HTTPHeaders?

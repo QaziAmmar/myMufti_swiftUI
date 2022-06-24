@@ -11,7 +11,6 @@ import SwiftUI
 struct ProfileRow<Destination: View>: View {
     
     var label = ""
-//    var action: () -> Void
     var destination: Destination
     
     var body: some View {

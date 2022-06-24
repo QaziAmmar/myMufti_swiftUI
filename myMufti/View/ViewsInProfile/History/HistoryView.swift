@@ -1,44 +1,47 @@
 //
-//  MyQuriesView.swift
+//  HistoryView.swift
 //  myMufti
 //
-//  Created by Qazi Ammar Arshad on 21/06/2022.
+//  Created by Qazi Ammar Arshad on 24/06/2022.
 //
 
 import SwiftUI
 
-struct MyQuriesView: View {
+
+// view is completed just need to integerate the API
+
+struct HistoryView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
-    @StateObject var vm = MyQueriesViewModel()
+    @StateObject var vm = HistoryViewModel()
     
     var body: some View {
         loadView()
             .onAppear() {
-                vm.callMyQueryAPI()
+//                vm.historyApi()
             }
     }
 }
 
 
 // MARK: - View Extension
-extension MyQuriesView {
+extension HistoryView {
     
     func loadView() -> some View {
         
         VStack {
             NavBar(action: {
                 self.presentationMode.wrappedValue.dismiss()
-            }, titile: "My Queries")
+            }, titile: "History")
             
             ScrollView {
-                if vm.myQueries.count == 0 {
-                    Text("No Query Found Found")
+                if vm.history_array.count == 0 {
+                    Text("No History Found")
                         .font(.custom(Popins.regular.rawValue, size: 24))
                 } else {
-                    ForEach($vm.myQueries) { myQuery in
-                        MyQueryRow(query: myQuery)
+                    ForEach($vm.history_array) { history in
+                        HistoryRow()
                     }
                 }
             }
@@ -46,9 +49,8 @@ extension MyQuriesView {
     }
 }
 
-
-struct MyQuriesView_Previews: PreviewProvider {
+struct HistoryView_Previews: PreviewProvider {
     static var previews: some View {
-        MyQuriesView()
+        HistoryView()
     }
 }

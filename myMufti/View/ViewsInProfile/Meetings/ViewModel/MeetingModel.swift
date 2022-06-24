@@ -11,6 +11,13 @@ struct MeetingModel: Codable {
     let status: Bool
     let message: String
     let meetings: [Meeting]
+    
+    enum CodingKeys: String, CodingKey {
+        case status = "status"
+        case message = "message"
+        case meetings = "data"
+    }
+    
 }
 
 // MARK: - Datum

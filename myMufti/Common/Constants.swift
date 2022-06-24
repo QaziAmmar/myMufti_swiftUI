@@ -42,9 +42,10 @@ enum ImageName: String {
     case mufti_placeHolder = "mufti_placeHolder"
     case mufti_placeHolder_ = "mufti_placeHolder_"
     
-    // search View
-    case video_temp = "video_temp"
-    case play = "play"
+    
+    // ask Mufties
+    
+    case filter = "filter"
     
     // newVideo
     case like = "like"
