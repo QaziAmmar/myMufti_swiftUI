@@ -24,7 +24,7 @@ struct MeetingModel: Codable {
 struct Meeting: Codable, Identifiable {
     let id = UUID()
     let quesID, userID, muftiID, questions: String
-    let category, date, createdAt, modified: String
+    let category, date, createdAt, modified: String?
     let status: String
 
     enum CodingKeys: String, CodingKey {

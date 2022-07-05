@@ -10,7 +10,7 @@ import SwiftUI
 struct SearchBar: View {
     
     @Binding var text: String
-    @State private var isEditing = false
+    var filterAction: (() -> Void)?
     
     var body: some View {
         
@@ -23,32 +23,36 @@ struct SearchBar: View {
                 TextField("Search ...", text: $text)
                     .padding([.trailing,. top, .bottom],7)
                                 .font(Font.custom(Popins.medium.rawValue, size: 14))
-                                .opacity(isEditing ? 1 : 0.7)
-                                .onTapGesture {
-                                    self.isEditing = true
-                                }
-                 
-                            if true {
-                                Button(action: {
-                                    self.isEditing = false
-                                    self.text = ""
-                 
-                                }) {
-                                    HStack(spacing: 10) {
-                                        Image(ImageName.filter.rawValue)
-                                            .resizable()
-                                            .frame(width: 24, height: 24)
-                                            
-                                        Image(systemName: "multiply")
-                                            .foregroundColor(.gray)
-                                            .frame(width: 24, height: 24)
-                                    }
-                                    
-                                }
-                                .padding(.trailing, 10)
-                                .transition(.move(edge: .trailing))
                                 
-                            }
+                 
+                HStack(spacing: 15) {
+                    Button {
+                        filterAction!()
+                    } label: {
+                        Image(ImageName.filter.rawValue)
+                            .resizable()
+                            .frame(width: 24, height: 24)
+                    }
+                    
+                    if !(text.isEmpty) {
+                        Button(action: {
+//                            self.isEditing = false
+                            self.text = ""
+         
+                        }) {
+                                Image(systemName: "multiply")
+                                    .foregroundColor(.gray)
+                                    .frame(width: 24, height: 24)
+                                    .transition(.scale(scale: 0.1, anchor: .center))
+
+                        }
+                    }
+                    
+                }.padding([.trailing, .leading], 10)
+                    .transition(.move(edge: .trailing))
+                
+                
+                            
             }
             .padding(5)
             .overlay(

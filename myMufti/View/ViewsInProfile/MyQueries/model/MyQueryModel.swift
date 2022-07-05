@@ -16,9 +16,10 @@ struct MyQueryModel: Codable {
 
 // MARK: - Datum
 struct MyQuery: Codable, Identifiable {
-    let id: String
+    let id: String?
     let userID: UserID?
-    let muftiID, questions, category, date: String
+    let date: String?
+    let muftiID, questions, category: String
     let createdAt, modified, status: String
     var timeago: String {
         return DateManager.standard.timeAgoDisplay(from: createdAt)

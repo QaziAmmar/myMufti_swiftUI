@@ -28,14 +28,14 @@ struct TabBarControllerView: View {
                 }
                 .tag(0)
             
-            HideNavbarOf(view: AskMuftiView())
+            HideNavbarOf(view: AskQuestionView())
             
                 .tabItem {
                     Label("", image: tabSelection == 1 ? ImageName.mufties_green.rawValue : ImageName.mufties.rawValue)
                 }
                 .tag(1)
             
-            HideNavbarOf(view: AskMuftiView())
+            HideNavbarOf(view: Chat())
             
                 .tabItem {
                     Label("", image: tabSelection == 2 ? ImageName.chat_green.rawValue : ImageName.chat.rawValue)
@@ -47,16 +47,13 @@ struct TabBarControllerView: View {
                     Label("", image: tabSelection == 3 ? ImageName.profile_green.rawValue : ImageName.profile.rawValue)
                 }
                 .tag(3)
-//
-//            TabViewsContainer(view: HomeView())
-//                .tabItem {
-//                    Label("", image: tabSelection == 0 ? ImageName.home_green.rawValue : ImageName.home.rawValue)
-//                }
-//                .tag(0)
-//
+
             
         }.accentColor(Color.green)
-            .navigationBarHidden(true)
+        .onReceive(UserDefaultManager.changeTab, perform: { tag in
+            tabSelection = tag
+        })
+        .navigationBarHidden(true)
             
         
         // fix the backgroud color of tabbar on scrolle

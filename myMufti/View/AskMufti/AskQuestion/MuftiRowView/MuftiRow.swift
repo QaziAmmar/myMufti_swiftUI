@@ -40,7 +40,7 @@ extension MuftiRow {
             Spacer()
             
             Button {
-                print("Ask Button")
+                action!()
             } label: {
                 Text("Ask")
                     .foregroundColor(.black)

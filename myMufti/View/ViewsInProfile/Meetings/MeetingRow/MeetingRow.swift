@@ -21,7 +21,7 @@ extension MeetingRow {
     func loadView() -> some View {
         HStack(alignment: .top) {
          
-            Text(DateManager.standard.monthNameWithDate(strDate: meeting.createdAt))
+            Text(DateManager.standard.monthNameWithDate(strDate: meeting.createdAt ?? ""))
                 .font(.custom(Popins.regular.rawValue, size: 16))
                 .padding([.leading], 10)
                 .padding([.trailing], 5)

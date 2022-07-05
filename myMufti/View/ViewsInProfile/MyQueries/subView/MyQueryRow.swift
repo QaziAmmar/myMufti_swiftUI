@@ -109,6 +109,6 @@ extension MyQueryRow {
 
 struct MyQueryRow_Previews: PreviewProvider {
     static var previews: some View {
-        MyQueryRow(query: .constant(MyQuery(id: "", userID: nil, muftiID: "", questions: "", category: "", date: "", createdAt: "", modified: "", status: "")))
+        MyQueryRow(query: .constant(MyQuery(id: "", userID: nil, date: "", muftiID: "", questions: "", category: "", createdAt: "", modified: "", status: "")))
     }
 }

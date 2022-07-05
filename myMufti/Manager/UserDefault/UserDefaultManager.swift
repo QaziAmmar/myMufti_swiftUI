@@ -15,6 +15,7 @@ enum UserDefaultEnum: String {
     case password
     case picture
     case userModel
+    case isSplashOpened
 }
 
 
@@ -40,9 +41,16 @@ class UserDefaultManager {
         return NetworkManager.mediaURL + (UserDefaultManager.shared.get()?.image ?? "")
     }
     
+    var isSplashOpen: Bool {
+        return (UserDefaultManager.shared.userDefaults.value(forKey: UserDefaultEnum.isSplashOpened.rawValue) as? Bool) ?? false
+        
+    }
+    
 
     static let Authenticated = PassthroughSubject<Bool, Never>()
     static let moveToLogin = PassthroughSubject<Bool, Never>()
+    static let muftiSuccess = PassthroughSubject<Bool, Never>()
+    static let changeTab = PassthroughSubject<Int, Never>()
     
     static func IsAuthenticated() -> Bool {
         //this means that userDefaults have some data

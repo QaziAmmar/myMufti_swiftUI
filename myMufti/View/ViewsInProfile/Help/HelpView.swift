@@ -27,7 +27,7 @@ extension HelpView  {
         VStack {
             NavBar(action: {
                 self.presentationMode.wrappedValue.dismiss()
-            }, titile: "Change user Name")
+            }, titile: "Help and Feedback")
             
             VStack {
                 VStack(alignment: .leading) {

@@ -12,11 +12,20 @@ struct LoginView: View {
     @ObservedObject var vm = LoginViewModel()
     @State private var moveToForgot = false
     
+    @AppStorage(UserDefaultEnum.isSplashOpened.rawValue) var isSplashOpen = false
+    
+    
     var body: some View {
         
         ZStack {
             bgImg()
             loadView()
+            
+            if !isSplashOpen {
+                SplashView()
+                    
+            }
+            
         }.alert(isPresented: $vm.showError, content: {
             Alert(title: Text(vm.errorMessage))
         }).onReceive(UserDefaultManager.moveToLogin, perform: { newValue in
@@ -127,18 +136,6 @@ extension LoginView {
                     .font(Font.custom(Popins.semiBold.rawValue, size: 12))
                     .padding([.leading, .trailing, .bottom])
             }
-        
-//        NavigationLink(destination:
-//                        ForgotEmailView()
-//            .navigationBarBackButtonHidden(true)
-//            .navigationBarHidden(true)
-//
-//        ) {
-//            Text("Forgot Password?")
-//                .foregroundColor(.black)
-//                .font(Font.custom(Popins.semiBold.rawValue, size: 12))
-//                .padding([.leading, .trailing, .bottom])
-//        }
     }
     
     

@@ -19,6 +19,10 @@ enum ImageName: String {
     case world = "world"
     case google = "google"
     case back = "back"
+    case next = "next"
+    case next_white = "next_white"
+    
+    
     
 //    TabBar Images
     case home = "home"
@@ -33,7 +37,7 @@ enum ImageName: String {
     
     
     // Profile Icom
-    case next = "next"
+    
     case image_picker = "image_picker"
     case person_placeholder = "person_placeholder"
     case premium = "premium"
@@ -46,30 +50,43 @@ enum ImageName: String {
     // ask Mufties
     
     case filter = "filter"
-    
-    // newVideo
-    case like = "like"
-    case unlike = "unlike"
-    case like_yellow = "like_yellow"
+    case dropDownIcon = "dropDownIcon"
+    case calendar = "calendar"
     
     // home
-    case download = "download"
+    case banner = "banner"
     
-    // playerView
-    case ellipse = "ellipse"
-    case cross = "cross"
+    // become mufti
     
+    case categoryProgress = "categoryProgress"
+    case infoProgress = "infoProgress"
+    case eduProgress = "eduProgress"
+    case actionImage = "actionImage"
+    case documetns = "documetns"
+    
+    case checkbox_unchecked = "checkbox_unchecked"
+    case checkbox_checked = "checkbox_checked"
+    
+    case radio_unchecked = "radio_unchecked"
+    case radio_checked = "radio_checked"
+    
+    case quesBackBtn = "quesBackBtn"
+    case shareBtn = "shareBtn"
+    
+    // comment
+    case commentBtn = "commentBtn"
+
 }
 
 enum ColorName: String {
     case appRed = "appRed"
-    case appLiteBlack = "appLightBlack"
+    case appLightGray = "appLightGray"
     case appBlack = "appBlack"
     case appGray = "appGray"
     case appDarkGray = "appDarkGray"
     case appYellow = "appYellow"
-    
     case appGreen = "appGreen"
+    case appGrayGreen = "appGrayGreen"
 }
 
 enum Popins: String {

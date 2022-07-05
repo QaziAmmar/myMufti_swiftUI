@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A0CBFC82873253500101B0B /* PostQuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0CBFC72873253500101B0B /* PostQuestionViewModel.swift */; };
 		7A2A9B1928608DF900224E2D /* myMuftiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A9B1828608DF900224E2D /* myMuftiApp.swift */; };
 		7A2A9B1B28608DF900224E2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A9B1A28608DF900224E2D /* ContentView.swift */; };
 		7A2A9B1D28608DFD00224E2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2A9B1C28608DFD00224E2D /* Assets.xcassets */; };
@@ -62,11 +63,26 @@
 		7A2A9BA6286093EF00224E2D /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2A9B94286093EF00224E2D /* Poppins-SemiBold.ttf */; };
 		7A2A9BA7286093EF00224E2D /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2A9B95286093EF00224E2D /* Poppins-Italic.ttf */; };
 		7A2A9BA8286093EF00224E2D /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2A9B96286093EF00224E2D /* Poppins-MediumItalic.ttf */; };
+		7A2B10332872AB44007FBA73 /* BecomeMuftiPersonInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B10322872AB44007FBA73 /* BecomeMuftiPersonInfoView.swift */; };
+		7A2B10352872B2FC007FBA73 /* BecomeMuftiEduView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B10342872B2FC007FBA73 /* BecomeMuftiEduView.swift */; };
+		7A2B10372872B8F2007FBA73 /* ActionableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B10362872B8F2007FBA73 /* ActionableTextField.swift */; };
+		7A2B10392872C359007FBA73 /* DatePickerMLB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B10382872C359007FBA73 /* DatePickerMLB.swift */; };
+		7A2B103B2872D0FF007FBA73 /* BecomeMuftiCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B103A2872D0FF007FBA73 /* BecomeMuftiCategoryView.swift */; };
+		7A2B103E2872D3BD007FBA73 /* BecomeMuftiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B103D2872D3BD007FBA73 /* BecomeMuftiViewModel.swift */; };
+		7A2B10412872D4CE007FBA73 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B10402872D4CE007FBA73 /* CategoryRow.swift */; };
+		7A2B10432872FAC1007FBA73 /* BecomeMuftiDone.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7A2B10422872FAC1007FBA73 /* BecomeMuftiDone.gif */; };
+		7A2B10452872FAEA007FBA73 /* BecomeMuftiSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B10442872FAEA007FBA73 /* BecomeMuftiSuccessView.swift */; };
+		7A2B10492873010D007FBA73 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B10482873010D007FBA73 /* GifImage.swift */; };
 		7A2FBC132860A89400E3925F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2FBC122860A89400E3925F /* HomeView.swift */; };
-		7A2FBC152860A89F00E3925F /* AskMuftiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2FBC142860A89F00E3925F /* AskMuftiView.swift */; };
 		7A2FBC172860A8A800E3925F /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2FBC162860A8A800E3925F /* Chat.swift */; };
 		7A2FBC1A28619B3D00E3925F /* ProfileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2FBC1928619B3D00E3925F /* ProfileRow.swift */; };
 		7A2FBC1C28619BB500E3925F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2FBC1B28619BB500E3925F /* ProfileViewModel.swift */; };
+		7A4BE579286C85D9006F2A2F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BE578286C85D9006F2A2F /* HomeViewModel.swift */; };
+		7A4F42A028743F5000B10DAC /* QuestionCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4F429F28743F5000B10DAC /* QuestionCommentView.swift */; };
+		7A4F42A32874529500B10DAC /* CommentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4F42A22874529500B10DAC /* CommentRow.swift */; };
+		7A4F42A628745B0E00B10DAC /* QuestionCommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4F42A528745B0E00B10DAC /* QuestionCommentViewModel.swift */; };
+		7A4F42A928745C9500B10DAC /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4F42A828745C9500B10DAC /* CommentModel.swift */; };
+		7A50D0EC286F382E0002A7FD /* QuestionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A50D0EB286F382E0002A7FD /* QuestionDetailView.swift */; };
 		7A5BDF102861AC6D001676B4 /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BDF0E2861AC6D001676B4 /* ChangePasswordViewModel.swift */; };
 		7A5BDF112861AC6D001676B4 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BDF0F2861AC6D001676B4 /* ChangePasswordView.swift */; };
 		7A5BDF152861AC74001676B4 /* ChangeUserNameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BDF132861AC74001676B4 /* ChangeUserNameViewModel.swift */; };
@@ -91,6 +107,21 @@
 		7A5BDF4E28648418001676B4 /* CreateNewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BDF4D28648418001676B4 /* CreateNewPasswordView.swift */; };
 		7A5BDF5128648C39001676B4 /* CreateNewPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BDF5028648C39001676B4 /* CreateNewPasswordViewModel.swift */; };
 		7A5BDF5328649DD7001676B4 /* MeetingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BDF5228649DD7001676B4 /* MeetingModel.swift */; };
+		7A5CA7C3286D7963007B843A /* QuestionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5CA7C2286D7963007B843A /* QuestionCardView.swift */; };
+		7A5EEFBE286EF9340095FF3A /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EEFBD286EF9340095FF3A /* HomeModel.swift */; };
+		7A6A7F5D286C664D000461B1 /* AskQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A7F5C286C664D000461B1 /* AskQuestionModel.swift */; };
+		7AA1AD4D2869AEC200ADF2CA /* AskQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA1AD4C2869AEC200ADF2CA /* AskQuestionView.swift */; };
+		7AA1AD512869AF6200ADF2CA /* AskQuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA1AD502869AF6200ADF2CA /* AskQuestionViewModel.swift */; };
+		7AA1AD532869B9F200ADF2CA /* DropDownBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA1AD522869B9F200ADF2CA /* DropDownBtn.swift */; };
+		7AA1AD562869D0D900ADF2CA /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA1AD552869D0D900ADF2CA /* FilterView.swift */; };
+		7AA1AD592869D83A00ADF2CA /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA1AD582869D83A00ADF2CA /* FilterViewModel.swift */; };
+		7AB53ECC287328E7009F9A04 /* PostQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB53ECB287328E7009F9A04 /* PostQuestionView.swift */; };
+		7AB53ECE2873FE10009F9A04 /* MovetoNextRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB53ECD2873FE10009F9A04 /* MovetoNextRow.swift */; };
+		7AB53ED02874033B009F9A04 /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB53ECF2874033B009F9A04 /* CategoryListView.swift */; };
+		7AB53ED228740BB9009F9A04 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB53ED128740BB9009F9A04 /* TestView.swift */; };
+		7AB53ED428741353009F9A04 /* TimeLimitPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB53ED328741353009F9A04 /* TimeLimitPicker.swift */; };
+		7AB53ED7287423EC009F9A04 /* PostQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB53ED6287423EC009F9A04 /* PostQuestionModel.swift */; };
+		7AB53EDA287427BB009F9A04 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB53ED9287427BA009F9A04 /* SplashView.swift */; };
 		7AD24D002865869B0056EE6D /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24CFF2865869B0056EE6D /* PrivacyPolicyView.swift */; };
 		7AD24D0328658CFE0056EE6D /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24D0228658CFE0056EE6D /* HelpView.swift */; };
 		7AD24D0628658D150056EE6D /* HelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24D0528658D150056EE6D /* HelpViewModel.swift */; };
@@ -99,12 +130,12 @@
 		7AD24D102865C7630056EE6D /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24D0F2865C7630056EE6D /* HistoryViewModel.swift */; };
 		7AD24D132865C7EA0056EE6D /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24D122865C7EA0056EE6D /* HistoryModel.swift */; };
 		7AD24D162865C9E20056EE6D /* HistoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24D152865C9E20056EE6D /* HistoryRow.swift */; };
-		7AD24D192865D3DF0056EE6D /* AskMuftiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24D182865D3DF0056EE6D /* AskMuftiViewModel.swift */; };
 		7AD24D1B2865DB2F0056EE6D /* MuftiRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24D1A2865DB2F0056EE6D /* MuftiRow.swift */; };
 		7AD24D1F2865DFFE0056EE6D /* MuftiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD24D1E2865DFFE0056EE6D /* MuftiModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A0CBFC72873253500101B0B /* PostQuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostQuestionViewModel.swift; sourceTree = "<group>"; };
 		7A2A9B1528608DF900224E2D /* myMufti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myMufti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2A9B1828608DF900224E2D /* myMuftiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myMuftiApp.swift; sourceTree = "<group>"; };
 		7A2A9B1A28608DF900224E2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -158,11 +189,26 @@
 		7A2A9B95286093EF00224E2D /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		7A2A9B96286093EF00224E2D /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
 		7A2A9BA92860942C00224E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7A2B10322872AB44007FBA73 /* BecomeMuftiPersonInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BecomeMuftiPersonInfoView.swift; sourceTree = "<group>"; };
+		7A2B10342872B2FC007FBA73 /* BecomeMuftiEduView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BecomeMuftiEduView.swift; sourceTree = "<group>"; };
+		7A2B10362872B8F2007FBA73 /* ActionableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionableTextField.swift; sourceTree = "<group>"; };
+		7A2B10382872C359007FBA73 /* DatePickerMLB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerMLB.swift; sourceTree = "<group>"; };
+		7A2B103A2872D0FF007FBA73 /* BecomeMuftiCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BecomeMuftiCategoryView.swift; sourceTree = "<group>"; };
+		7A2B103D2872D3BD007FBA73 /* BecomeMuftiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BecomeMuftiViewModel.swift; sourceTree = "<group>"; };
+		7A2B10402872D4CE007FBA73 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		7A2B10422872FAC1007FBA73 /* BecomeMuftiDone.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BecomeMuftiDone.gif; sourceTree = "<group>"; };
+		7A2B10442872FAEA007FBA73 /* BecomeMuftiSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BecomeMuftiSuccessView.swift; sourceTree = "<group>"; };
+		7A2B10482873010D007FBA73 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
 		7A2FBC122860A89400E3925F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		7A2FBC142860A89F00E3925F /* AskMuftiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMuftiView.swift; sourceTree = "<group>"; };
 		7A2FBC162860A8A800E3925F /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		7A2FBC1928619B3D00E3925F /* ProfileRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRow.swift; sourceTree = "<group>"; };
 		7A2FBC1B28619BB500E3925F /* ProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		7A4BE578286C85D9006F2A2F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7A4F429F28743F5000B10DAC /* QuestionCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCommentView.swift; sourceTree = "<group>"; };
+		7A4F42A22874529500B10DAC /* CommentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRow.swift; sourceTree = "<group>"; };
+		7A4F42A528745B0E00B10DAC /* QuestionCommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCommentViewModel.swift; sourceTree = "<group>"; };
+		7A4F42A828745C9500B10DAC /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		7A50D0EB286F382E0002A7FD /* QuestionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailView.swift; sourceTree = "<group>"; };
 		7A5BDF0E2861AC6D001676B4 /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
 		7A5BDF0F2861AC6D001676B4 /* ChangePasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
 		7A5BDF132861AC74001676B4 /* ChangeUserNameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeUserNameViewModel.swift; sourceTree = "<group>"; };
@@ -187,6 +233,21 @@
 		7A5BDF4D28648418001676B4 /* CreateNewPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPasswordView.swift; sourceTree = "<group>"; };
 		7A5BDF5028648C39001676B4 /* CreateNewPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPasswordViewModel.swift; sourceTree = "<group>"; };
 		7A5BDF5228649DD7001676B4 /* MeetingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingModel.swift; sourceTree = "<group>"; };
+		7A5CA7C2286D7963007B843A /* QuestionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCardView.swift; sourceTree = "<group>"; };
+		7A5EEFBD286EF9340095FF3A /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		7A6A7F5C286C664D000461B1 /* AskQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskQuestionModel.swift; sourceTree = "<group>"; };
+		7AA1AD4C2869AEC200ADF2CA /* AskQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskQuestionView.swift; sourceTree = "<group>"; };
+		7AA1AD502869AF6200ADF2CA /* AskQuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskQuestionViewModel.swift; sourceTree = "<group>"; };
+		7AA1AD522869B9F200ADF2CA /* DropDownBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownBtn.swift; sourceTree = "<group>"; };
+		7AA1AD552869D0D900ADF2CA /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		7AA1AD582869D83A00ADF2CA /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
+		7AB53ECB287328E7009F9A04 /* PostQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostQuestionView.swift; sourceTree = "<group>"; };
+		7AB53ECD2873FE10009F9A04 /* MovetoNextRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovetoNextRow.swift; sourceTree = "<group>"; };
+		7AB53ECF2874033B009F9A04 /* CategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListView.swift; sourceTree = "<group>"; };
+		7AB53ED128740BB9009F9A04 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		7AB53ED328741353009F9A04 /* TimeLimitPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLimitPicker.swift; sourceTree = "<group>"; };
+		7AB53ED6287423EC009F9A04 /* PostQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostQuestionModel.swift; sourceTree = "<group>"; };
+		7AB53ED9287427BA009F9A04 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		7AD24CFF2865869B0056EE6D /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		7AD24D0228658CFE0056EE6D /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		7AD24D0528658D150056EE6D /* HelpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewModel.swift; sourceTree = "<group>"; };
@@ -195,7 +256,6 @@
 		7AD24D0F2865C7630056EE6D /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		7AD24D122865C7EA0056EE6D /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		7AD24D152865C9E20056EE6D /* HistoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRow.swift; sourceTree = "<group>"; };
-		7AD24D182865D3DF0056EE6D /* AskMuftiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskMuftiViewModel.swift; sourceTree = "<group>"; };
 		7AD24D1A2865DB2F0056EE6D /* MuftiRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuftiRow.swift; sourceTree = "<group>"; };
 		7AD24D1E2865DFFE0056EE6D /* MuftiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuftiModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,6 +275,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A0CBFC32873249000101B0B /* PostQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				7AB53ED5287423DF009F9A04 /* Model */,
+				7A0CBFC62873252400101B0B /* ViewModel */,
+				7AB53ECB287328E7009F9A04 /* PostQuestionView.swift */,
+				7AB53ECD2873FE10009F9A04 /* MovetoNextRow.swift */,
+				7AB53ECF2874033B009F9A04 /* CategoryListView.swift */,
+			);
+			path = PostQuestion;
+			sourceTree = "<group>";
+		};
+		7A0CBFC62873252400101B0B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7A0CBFC72873253500101B0B /* PostQuestionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		7A2A9B0C28608DF900224E2D = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				7A2A9BA92860942C00224E2D /* Info.plist */,
+				7A2B10422872FAC1007FBA73 /* BecomeMuftiDone.gif */,
 				7A2A9B3528608E5900224E2D /* Common */,
 				7A2A9B2F28608E5800224E2D /* Extension */,
 				7A2A9B2628608E5800224E2D /* Manager */,
@@ -340,16 +421,22 @@
 		7A2A9B4E28608ED800224E2D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7A4F429E28743F2700B10DAC /* QuestionComment */,
+				7AB53ED8287427A8009F9A04 /* Splash */,
+				7A0CBFC32873249000101B0B /* PostQuestion */,
+				7A2B10312872AAE5007FBA73 /* BecomeMufti */,
 				7A2A9B4F28608EED00224E2D /* CustomViews */,
 				7A2A9B7D2860911000224E2D /* SignUp */,
 				7A2A9B6528608F4C00224E2D /* Login */,
 				7A2A9B6928608FB100224E2D /* TabBarController */,
 				7A2FBC0D2860A83100E3925F /* Home */,
+				7A50D0E7286F380B0002A7FD /* QuestionDetail */,
 				7A2FBC0F2860A83A00E3925F /* Chat */,
-				7A2A9B732860906C00224E2D /* Profile */,
 				7A5BDF1B2861C71D001676B4 /* ViewsInProfile */,
+				7A2A9B732860906C00224E2D /* Profile */,
 				7A2FBC0E2860A83500E3925F /* AskMufti */,
 				7A2A9B7A286090E800224E2D /* ForgotPassword */,
+				7AB53ED128740BB9009F9A04 /* TestView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -357,6 +444,7 @@
 		7A2A9B4F28608EED00224E2D /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				7A2B1047287300FB007FBA73 /* GifImage */,
 				7AD24D08286597560056EE6D /* ActivityViewController.swift */,
 				7A5BDF172861B05A001676B4 /* Buttons */,
 				7A2A9B5028608EED00224E2D /* LoginInHeaderView.swift */,
@@ -368,6 +456,10 @@
 				7A2A9B5928608EED00224E2D /* InstructionText.swift */,
 				7A2A9B5A28608EED00224E2D /* CustomDivider.swift */,
 				7A5BDF3428644EB7001676B4 /* AsyncImageMLB.swift */,
+				7AA1AD522869B9F200ADF2CA /* DropDownBtn.swift */,
+				7A2B10362872B8F2007FBA73 /* ActionableTextField.swift */,
+				7A2B10382872C359007FBA73 /* DatePickerMLB.swift */,
+				7AB53ED328741353009F9A04 /* TimeLimitPicker.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -494,9 +586,49 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		7A2B10312872AAE5007FBA73 /* BecomeMufti */ = {
+			isa = PBXGroup;
+			children = (
+				7A2B103F2872D4BC007FBA73 /* CategoryRow */,
+				7A2B103C2872D3B1007FBA73 /* ViewModel */,
+				7A2B10442872FAEA007FBA73 /* BecomeMuftiSuccessView.swift */,
+				7A2B10322872AB44007FBA73 /* BecomeMuftiPersonInfoView.swift */,
+				7A2B10342872B2FC007FBA73 /* BecomeMuftiEduView.swift */,
+				7A2B103A2872D0FF007FBA73 /* BecomeMuftiCategoryView.swift */,
+			);
+			path = BecomeMufti;
+			sourceTree = "<group>";
+		};
+		7A2B103C2872D3B1007FBA73 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7A2B103D2872D3BD007FBA73 /* BecomeMuftiViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7A2B103F2872D4BC007FBA73 /* CategoryRow */ = {
+			isa = PBXGroup;
+			children = (
+				7A2B10402872D4CE007FBA73 /* CategoryRow.swift */,
+			);
+			path = CategoryRow;
+			sourceTree = "<group>";
+		};
+		7A2B1047287300FB007FBA73 /* GifImage */ = {
+			isa = PBXGroup;
+			children = (
+				7A2B10482873010D007FBA73 /* GifImage.swift */,
+			);
+			path = GifImage;
+			sourceTree = "<group>";
+		};
 		7A2FBC0D2860A83100E3925F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				7A5CA7C1286D7913007B843A /* QuestionCard */,
+				7A6A7F5F286C8368000461B1 /* Model */,
+				7A6A7F5E286C8364000461B1 /* ViewModel */,
 				7A2FBC122860A89400E3925F /* HomeView.swift */,
 			);
 			path = Home;
@@ -505,10 +637,8 @@
 		7A2FBC0E2860A83500E3925F /* AskMufti */ = {
 			isa = PBXGroup;
 			children = (
-				7A2FBC142860A89F00E3925F /* AskMuftiView.swift */,
-				7AD24D1C2865DB350056EE6D /* MuftiRowViw */,
-				7AD24D1D2865DFE90056EE6D /* MuftiModel */,
-				7AD24D172865D3C70056EE6D /* ViewModel */,
+				7AA1AD542869D0CD00ADF2CA /* FilterView */,
+				7AA1AD4E2869AF4A00ADF2CA /* AskQuestion */,
 			);
 			path = AskMufti;
 			sourceTree = "<group>";
@@ -527,6 +657,73 @@
 				7A2FBC1928619B3D00E3925F /* ProfileRow.swift */,
 			);
 			path = subView;
+			sourceTree = "<group>";
+		};
+		7A4F429E28743F2700B10DAC /* QuestionComment */ = {
+			isa = PBXGroup;
+			children = (
+				7A4F42A728745C8C00B10DAC /* Model */,
+				7A4F42A428745AFE00B10DAC /* ViewModel */,
+				7A4F42A12874528000B10DAC /* CommentRow */,
+				7A4F429F28743F5000B10DAC /* QuestionCommentView.swift */,
+			);
+			path = QuestionComment;
+			sourceTree = "<group>";
+		};
+		7A4F42A12874528000B10DAC /* CommentRow */ = {
+			isa = PBXGroup;
+			children = (
+				7A4F42A22874529500B10DAC /* CommentRow.swift */,
+			);
+			path = CommentRow;
+			sourceTree = "<group>";
+		};
+		7A4F42A428745AFE00B10DAC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7A4F42A528745B0E00B10DAC /* QuestionCommentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7A4F42A728745C8C00B10DAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A4F42A828745C9500B10DAC /* CommentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7A50D0E7286F380B0002A7FD /* QuestionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7A50D0EA286F38210002A7FD /* Model */,
+				7A50D0E9286F381E0002A7FD /* ViewModel */,
+				7A50D0E8286F38170002A7FD /* View */,
+			);
+			path = QuestionDetail;
+			sourceTree = "<group>";
+		};
+		7A50D0E8286F38170002A7FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7A50D0EB286F382E0002A7FD /* QuestionDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7A50D0E9286F381E0002A7FD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7A50D0EA286F38210002A7FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7A5BDF0C2861AC6D001676B4 /* ChanagePassword */ = {
@@ -734,6 +931,82 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		7A5CA7C1286D7913007B843A /* QuestionCard */ = {
+			isa = PBXGroup;
+			children = (
+				7A5CA7C2286D7963007B843A /* QuestionCardView.swift */,
+			);
+			path = QuestionCard;
+			sourceTree = "<group>";
+		};
+		7A6A7F5E286C8364000461B1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7A4BE578286C85D9006F2A2F /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7A6A7F5F286C8368000461B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A5EEFBD286EF9340095FF3A /* HomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AA1AD4E2869AF4A00ADF2CA /* AskQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				7AD24D1D2865DFE90056EE6D /* Model */,
+				7AD24D1C2865DB350056EE6D /* MuftiRowView */,
+				7AA1AD4F2869AF5300ADF2CA /* ViewModel */,
+				7AA1AD4C2869AEC200ADF2CA /* AskQuestionView.swift */,
+			);
+			path = AskQuestion;
+			sourceTree = "<group>";
+		};
+		7AA1AD4F2869AF5300ADF2CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7AA1AD502869AF6200ADF2CA /* AskQuestionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7AA1AD542869D0CD00ADF2CA /* FilterView */ = {
+			isa = PBXGroup;
+			children = (
+				7AA1AD552869D0D900ADF2CA /* FilterView.swift */,
+				7AA1AD572869D82D00ADF2CA /* ViewModel */,
+			);
+			path = FilterView;
+			sourceTree = "<group>";
+		};
+		7AA1AD572869D82D00ADF2CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7AA1AD582869D83A00ADF2CA /* FilterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7AB53ED5287423DF009F9A04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7AB53ED6287423EC009F9A04 /* PostQuestionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AB53ED8287427A8009F9A04 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				7AB53ED9287427BA009F9A04 /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 		7AD24CFE2865868B0056EE6D /* PrivacyPolicy */ = {
 			isa = PBXGroup;
 			children = (
@@ -794,28 +1067,21 @@
 			path = HistoryRow;
 			sourceTree = "<group>";
 		};
-		7AD24D172865D3C70056EE6D /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				7AD24D182865D3DF0056EE6D /* AskMuftiViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		7AD24D1C2865DB350056EE6D /* MuftiRowViw */ = {
+		7AD24D1C2865DB350056EE6D /* MuftiRowView */ = {
 			isa = PBXGroup;
 			children = (
 				7AD24D1A2865DB2F0056EE6D /* MuftiRow.swift */,
 			);
-			path = MuftiRowViw;
+			path = MuftiRowView;
 			sourceTree = "<group>";
 		};
-		7AD24D1D2865DFE90056EE6D /* MuftiModel */ = {
+		7AD24D1D2865DFE90056EE6D /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				7AD24D1E2865DFFE0056EE6D /* MuftiModel.swift */,
+				7A6A7F5C286C664D000461B1 /* AskQuestionModel.swift */,
 			);
-			path = MuftiModel;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -891,6 +1157,7 @@
 				7A2A9B9B286093EF00224E2D /* Poppins-Light.ttf in Resources */,
 				7A2A9B97286093EF00224E2D /* Poppins-ExtraLight.ttf in Resources */,
 				7A2A9BA5286093EF00224E2D /* Poppins-Thin.ttf in Resources */,
+				7A2B10432872FAC1007FBA73 /* BecomeMuftiDone.gif in Resources */,
 				7A2A9BA7286093EF00224E2D /* Poppins-Italic.ttf in Resources */,
 				7A2A9BA1286093EF00224E2D /* Poppins-Regular.ttf in Resources */,
 				7A2A9B98286093EF00224E2D /* Poppins-ThinItalic.ttf in Resources */,
@@ -917,42 +1184,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB53ED228740BB9009F9A04 /* TestView.swift in Sources */,
 				7A5BDF4E28648418001676B4 /* CreateNewPasswordView.swift in Sources */,
 				7A2A9B6C28608FB100224E2D /* TabBarControllerView.swift in Sources */,
+				7A2B10492873010D007FBA73 /* GifImage.swift in Sources */,
 				7A2A9B5D28608EED00224E2D /* HideNavbarOf.swift in Sources */,
+				7AB53ECE2873FE10009F9A04 /* MovetoNextRow.swift in Sources */,
 				7AD24D09286597560056EE6D /* ActivityViewController.swift in Sources */,
 				7A5BDF33286214CD001676B4 /* RoundedCorner.swift in Sources */,
 				7A2A9B3828608E5900224E2D /* UserDefaultManager.swift in Sources */,
+				7A4F42A628745B0E00B10DAC /* QuestionCommentViewModel.swift in Sources */,
+				7AA1AD592869D83A00ADF2CA /* FilterViewModel.swift in Sources */,
 				7AD24D0328658CFE0056EE6D /* HelpView.swift in Sources */,
 				7A5BDF162861AC74001676B4 /* ChangeUserName.swift in Sources */,
+				7A4F42A32874529500B10DAC /* CommentRow.swift in Sources */,
 				7A2A9B4028608E5900224E2D /* Constants.swift in Sources */,
 				7A2A9B3B28608E5900224E2D /* DateManager.swift in Sources */,
+				7A2B103E2872D3BD007FBA73 /* BecomeMuftiViewModel.swift in Sources */,
+				7AA1AD4D2869AEC200ADF2CA /* AskQuestionView.swift in Sources */,
 				7A2A9B722860904F00224E2D /* User.swift in Sources */,
+				7AB53EDA287427BB009F9A04 /* SplashView.swift in Sources */,
 				7A2A9B5B28608EED00224E2D /* LoginInHeaderView.swift in Sources */,
 				7A2A9B6228608EED00224E2D /* NavBar.swift in Sources */,
 				7AD24D102865C7630056EE6D /* HistoryViewModel.swift in Sources */,
 				7AD24D1F2865DFFE0056EE6D /* MuftiModel.swift in Sources */,
 				7A2A9B812860911000224E2D /* SignUpViewModel.swift in Sources */,
 				7A5BDF2E2861E8B1001676B4 /* MyQueryModel.swift in Sources */,
+				7A2B10412872D4CE007FBA73 /* CategoryRow.swift in Sources */,
+				7A0CBFC82873253500101B0B /* PostQuestionViewModel.swift in Sources */,
+				7A4BE579286C85D9006F2A2F /* HomeViewModel.swift in Sources */,
 				7A5BDF3A28645607001676B4 /* MeetingView.swift in Sources */,
+				7A4F42A028743F5000B10DAC /* QuestionCommentView.swift in Sources */,
 				7A2A9B6428608EED00224E2D /* CustomDivider.swift in Sources */,
 				7AD24D0C2865C71F0056EE6D /* HistoryView.swift in Sources */,
 				7A2A9B5E28608EED00224E2D /* SearchBar.swift in Sources */,
 				7AD24D132865C7EA0056EE6D /* HistoryModel.swift in Sources */,
 				7A2A9B3928608E5900224E2D /* ImagePicker.swift in Sources */,
 				7A5BDF5128648C39001676B4 /* CreateNewPasswordViewModel.swift in Sources */,
+				7A2B10372872B8F2007FBA73 /* ActionableTextField.swift in Sources */,
 				7A2A9B6828608F6100224E2D /* LoginView.swift in Sources */,
 				7A5BDF4828646A76001676B4 /* OTPView.swift in Sources */,
 				7A2A9B752860907700224E2D /* ProfileView.swift in Sources */,
 				7A2A9B3A28608E5900224E2D /* NetworkManager.swift in Sources */,
 				7A2A9B5F28608EED00224E2D /* CustomTextField.swift in Sources */,
-				7A2FBC152860A89F00E3925F /* AskMuftiView.swift in Sources */,
+				7AA1AD512869AF6200ADF2CA /* AskQuestionViewModel.swift in Sources */,
 				7A2A9B3E28608E5900224E2D /* TFPlaceHolderExtension.swift in Sources */,
 				7AD24D1B2865DB2F0056EE6D /* MuftiRow.swift in Sources */,
 				7A2A9B6028608EED00224E2D /* GSignInViewModel.swift in Sources */,
 				7A5BDF312861F521001676B4 /* MyQueryRow.swift in Sources */,
+				7A2B10392872C359007FBA73 /* DatePickerMLB.swift in Sources */,
 				7A5BDF112861AC6D001676B4 /* ChangePasswordView.swift in Sources */,
+				7A5EEFBE286EF9340095FF3A /* HomeModel.swift in Sources */,
 				7A2A9B5C28608EED00224E2D /* BlackButton.swift in Sources */,
+				7A6A7F5D286C664D000461B1 /* AskQuestionModel.swift in Sources */,
 				7A2FBC1A28619B3D00E3925F /* ProfileRow.swift in Sources */,
 				7A5BDF222861D1C7001676B4 /* NotificationRow.swift in Sources */,
 				7A2A9B3F28608E5900224E2D /* UIImageExt.swift in Sources */,
@@ -966,26 +1250,38 @@
 				7A2A9B79286090AC00224E2D /* LoginViewModel.swift in Sources */,
 				7AD24D162865C9E20056EE6D /* HistoryRow.swift in Sources */,
 				7A5BDF2B2861E69F001676B4 /* MyQueriesViewModel.swift in Sources */,
+				7AB53ED7287423EC009F9A04 /* PostQuestionModel.swift in Sources */,
 				7A2FBC1C28619BB500E3925F /* ProfileViewModel.swift in Sources */,
+				7A5CA7C3286D7963007B843A /* QuestionCardView.swift in Sources */,
+				7A2B10332872AB44007FBA73 /* BecomeMuftiPersonInfoView.swift in Sources */,
+				7A50D0EC286F382E0002A7FD /* QuestionDetailView.swift in Sources */,
 				7A2A9B4128608E5900224E2D /* Validators.swift in Sources */,
 				7A5BDF3E28646342001676B4 /* MeetingViewModel.swift in Sources */,
 				7A2A9B6D28608FB100224E2D /* TabViewsContainer.swift in Sources */,
 				7A5BDF42286465FA001676B4 /* ForgotEmailView.swift in Sources */,
 				7A5BDF3C2864583E001676B4 /* MeetingRow.swift in Sources */,
+				7AA1AD532869B9F200ADF2CA /* DropDownBtn.swift in Sources */,
+				7AA1AD562869D0D900ADF2CA /* FilterView.swift in Sources */,
 				7A2A9B712860904F00224E2D /* GeneralResponseModel.swift in Sources */,
 				7A5BDF282861E669001676B4 /* MyQuriesView.swift in Sources */,
+				7AB53ED02874033B009F9A04 /* CategoryListView.swift in Sources */,
 				7A2A9B3D28608E5900224E2D /* AlignmentExt.swift in Sources */,
+				7AB53ECC287328E7009F9A04 /* PostQuestionView.swift in Sources */,
 				7A5BDF192861B064001676B4 /* GreenButton.swift in Sources */,
 				7AD24D0628658D150056EE6D /* HelpViewModel.swift in Sources */,
+				7AB53ED428741353009F9A04 /* TimeLimitPicker.swift in Sources */,
 				7A5BDF4B28646ADA001676B4 /* OTPViewModel.swift in Sources */,
 				7A2FBC132860A89400E3925F /* HomeView.swift in Sources */,
 				7A2A9B3C28608E5900224E2D /* ColorExtension.swift in Sources */,
 				7A2A9B822860911000224E2D /* SignUpView.swift in Sources */,
+				7A2B10352872B2FC007FBA73 /* BecomeMuftiEduView.swift in Sources */,
 				7A2A9B1928608DF900224E2D /* myMuftiApp.swift in Sources */,
 				7A5BDF252861D800001676B4 /* NotificationViewModel.swift in Sources */,
+				7A2B10452872FAEA007FBA73 /* BecomeMuftiSuccessView.swift in Sources */,
 				7A5BDF3528644EB7001676B4 /* AsyncImageMLB.swift in Sources */,
-				7AD24D192865D3DF0056EE6D /* AskMuftiViewModel.swift in Sources */,
 				7A5BDF1E2861C7A4001676B4 /* NotificationView.swift in Sources */,
+				7A2B103B2872D0FF007FBA73 /* BecomeMuftiCategoryView.swift in Sources */,
+				7A4F42A928745C9500B10DAC /* CommentModel.swift in Sources */,
 				7A2A9B6328608EED00224E2D /* InstructionText.swift in Sources */,
 				7A5BDF5328649DD7001676B4 /* MeetingModel.swift in Sources */,
 			);
@@ -1125,16 +1421,17 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.squadra.recognizeText.myMufti;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlbranch.myMufti;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1155,16 +1452,17 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.squadra.recognizeText.myMufti;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlbranch.myMufti;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
