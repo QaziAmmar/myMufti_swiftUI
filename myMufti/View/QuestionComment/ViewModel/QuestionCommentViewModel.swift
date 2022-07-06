@@ -58,8 +58,7 @@ extension QuestionCommentViewModel {
             return
         }
         
-        
-        var endPoint = "Users/comment"
+        let endPoint = "Users/comment"
         
         let parametres = [
             "user_id": UserDefaultManager.shared.userId,
@@ -68,7 +67,6 @@ extension QuestionCommentViewModel {
             
         ]
         
-        endPoint = endPoint.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
         
         NetworkManager.shared.URLrequest(endPointURL: endPoint, methodType: .post, parametres: parametres, returnType: PostCommentModel.self) { data, statusCode in
             
@@ -87,5 +85,41 @@ extension QuestionCommentViewModel {
             self.errorMessage = errorString
         }
     }
+    
+    
+    
+    func muftiAnswer(question_id: String, success: @escaping () -> Void) {
+        
+        if muftiAnswer.isEmpty {
+            return
+        }
+        // testing
+        
+        let endPoint = "Users/answer"
+        
+        let parametres = [
+            "mufti_id": UserDefaultManager.shared.userId,
+             "question_id": question_id,
+             "answer": muftiAnswer
+        ]
+
+        
+        NetworkManager.shared.URLrequest(endPointURL: endPoint, methodType: .post, parametres: parametres, returnType: GeneralResponse.self) { data, statusCode in
+            
+            if let generalResponseModel = data as? GeneralResponse {
+                
+                if generalResponseModel.status == true {
+                    // perform all user defaults handing coding here
+                    success()
+                } else {
+                    self.showError(message: generalResponseModel.message)
+                }
+            }
+            
+        } withapiFiluer: { errorString in
+            self.errorMessage = errorString
+        }
+    }
+    
     
 }

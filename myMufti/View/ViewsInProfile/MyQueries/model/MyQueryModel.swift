@@ -15,7 +15,11 @@ struct MyQueryModel: Codable {
 }
 
 // MARK: - Datum
-struct MyQuery: Codable, Identifiable {
+struct MyQuery: Codable, Identifiable, Equatable {
+    static func == (lhs: MyQuery, rhs: MyQuery) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
     let id: String?
     let userID: UserID?
     let date: String?

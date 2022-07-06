@@ -48,4 +48,34 @@ extension HomeViewModel {
         }
     }
     
+    func userVoteForQuestion(question_index: Int, vote: String) {
+        
+        let endPoint = "Users/vote"
+        
+        let parameters = [
+            "user_id": UserDefaultManager.shared.userId,
+            "question_id": questions[question_index].questionID,
+               "vote": vote
+        ]
+        
+        
+        NetworkManager.shared.URLrequest(endPointURL: endPoint, methodType: .post, parametres: parameters, returnType: GeneralResponse.self) { data, statusCode in
+            
+            if let generalResponseModel = data as? GeneralResponse {
+                
+                if generalResponseModel.status == true {
+                    // perform all user defaults handing coding here
+                    // disable comment button for user
+                    self.questions[question_index].voteDisable = true
+                } else {
+                    self.showError(message: generalResponseModel.message)
+                }
+            }
+            
+        } withapiFiluer: { errorString in
+            self.errorMessage = errorString
+        }
+    }
+    
+    
 }

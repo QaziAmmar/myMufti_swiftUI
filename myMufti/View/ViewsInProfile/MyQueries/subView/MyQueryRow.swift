@@ -9,12 +9,10 @@ import SwiftUI
 
 struct MyQueryRow: View {
     
-    var name = "Skndr bkht"
-    var imageURL = ""
-    var timeAgo = "Just Now"
-    var message = "I want to give my Zakat to an Islamic Center, what should I do?"
     
     @Binding var query: MyQuery
+    var action: (Bool) -> Void
+    
     
     
     var body: some View {
@@ -68,7 +66,7 @@ extension MyQueryRow {
         HStack(spacing: 0) {
             
             Button {
-                print("accept")
+                self.action(true)
             } label: {
                 ZStack {
                     Rectangle()
@@ -84,7 +82,7 @@ extension MyQueryRow {
             }
             
             Button {
-                print("Decline")
+                self.action(false)
             } label: {
                 ZStack {
                     
@@ -109,6 +107,8 @@ extension MyQueryRow {
 
 struct MyQueryRow_Previews: PreviewProvider {
     static var previews: some View {
-        MyQueryRow(query: .constant(MyQuery(id: "", userID: nil, date: "", muftiID: "", questions: "", category: "", createdAt: "", modified: "", status: "")))
+        MyQueryRow(query: .constant(MyQuery(id: "", userID: nil, date: "", muftiID: "", questions: "", category: "", createdAt: "", modified: "", status: "")), action: { status in 
+            print("action")
+        })
     }
 }

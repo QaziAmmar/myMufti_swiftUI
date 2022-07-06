@@ -10,6 +10,7 @@ import SwiftUI
 struct QuestionCardView: View {
     
     @Binding var question: QuestionModel
+    var action: (String) -> Void
     
     var body: some View {
         ZStack {
@@ -77,22 +78,21 @@ extension QuestionCardView {
                     
                 }
                 
-//                Button {
-//                    print("hellow")
-//                } label: {
-//
-//
-//                }
-                Text("Yes")
-                    .foregroundColor(.white)
-                    .font(.custom(Popins.regular.rawValue, size: 13))
-                    .padding([.leading, .trailing], 17)
-                    .padding([.bottom, .top], 1)
-                    .background(
-                        RoundedCorner(radius: 7)
-                            .foregroundColor(Color(ColorName.appGreen.rawValue))
-                    )
-                .offset(y: 5)
+                Button {
+                    self.action("1")
+                } label: {
+                    Text("Yes")
+                        .foregroundColor(.white)
+                        .font(.custom(Popins.regular.rawValue, size: 13))
+                        .padding([.leading, .trailing], 17)
+                        .padding([.bottom, .top], 1)
+                        .background(
+                            RoundedCorner(radius: 7)
+                                .foregroundColor(Color(ColorName.appGreen.rawValue))
+                        )
+                }.offset(y: 5)
+                    .disabled(question.voteDisable ?? false)
+                
                 
             }
             Spacer(minLength: 50)
@@ -109,22 +109,21 @@ extension QuestionCardView {
                     
                 }
                 
-//                Button {
-//                    print("hellow")
-//                } label: {
-//
-//                }
-                
-                Text("No")
-                    .foregroundColor(.white)
-                    .font(.custom(Popins.regular.rawValue, size: 13))
-                    .padding([.leading, .trailing], 17)
-                    .padding([.bottom, .top], 1)
-                    .background(
-                        RoundedCorner(radius: 7)
-                            .foregroundColor(Color(ColorName.appLightGray.rawValue))
-                    )
+                Button {
+                    self.action("2")
+                } label: {
+                    Text("No")
+                        .foregroundColor(.white)
+                        .font(.custom(Popins.regular.rawValue, size: 13))
+                        .padding([.leading, .trailing], 17)
+                        .padding([.bottom, .top], 1)
+                        .background(
+                            RoundedCorner(radius: 7)
+                                .foregroundColor(Color(ColorName.appLightGray.rawValue))
+                        )
+                }
                 .offset(y: 5)
+                .disabled(question.voteDisable ?? false)
                 
             }
             
@@ -171,6 +170,8 @@ extension QuestionCardView {
 
 struct QuestionCardView_Previews: PreviewProvider {
     static var previews: some View {
-        QuestionCardView(question: .constant(QuestionModel(questionID: "", userID: UserID(image: "", id: "", name: ""), questionTitle: "", question: "", options: "", timeLimit: "", createdAt: "", userVote: "", muftiAnswer: "", questionCategories: [], questionComment: 5, totalVote: 5, totalVoteForYes: 5, totalVoteForNo: 5)))
+        QuestionCardView(question: .constant(QuestionModel(questionID: "", userID: UserID(image: "", id: "", name: ""), questionTitle: "", question: "", options: "", timeLimit: "", createdAt: "", userVote: "", muftiAnswer: "", questionCategories: [], questionComment: 5, totalVote: 5, totalVoteForYes: 5, totalVoteForNo: 5)), action: { vote in
+            print("\(vote)")
+        })
     }
 }

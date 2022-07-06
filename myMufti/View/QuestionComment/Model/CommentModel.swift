@@ -35,6 +35,8 @@ struct PostCommentModel: Codable {
 
 // MARK: - Datum
 struct Comment: Codable, Identifiable {
+    
+    
     let id = UUID().uuidString
     let commentID, questionID: String
     let userID: UserID?

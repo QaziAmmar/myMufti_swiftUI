@@ -50,7 +50,7 @@ extension QuestionDetailView  {
             TabView(selection: $tabSelection_userId) {
 
                 ForEach($vm.questions) { question in
-                    QuestionCardView(question: question)
+                    QuestionCardView(question: question, action: {_ in })
                         .padding()
                         .onTapGesture {
                             print("did tapped")

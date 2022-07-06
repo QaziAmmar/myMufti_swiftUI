@@ -10,7 +10,7 @@ import SwiftUI
 struct QuestionCommentView: View {
     
     @StateObject var vm = QuestionCommentViewModel()
-    var tempArry = ["1", "2", "3"]
+    @State private var isSharePresented = false
     @Binding var question: QuestionModel
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
@@ -24,6 +24,11 @@ struct QuestionCommentView: View {
         }).onAppear {
             vm.getCommentsOf(question_id: question.questionID)
         }
+        .sheet(isPresented: $isSharePresented, onDismiss: {
+            print("Dismiss")
+        }, content: {
+            ActivityViewController(activityItems: [question.questionTitle, question.question])
+        })
         
     }
 }
@@ -44,14 +49,15 @@ extension QuestionCommentView  {
             
             
             VStack(spacing: 0) {
-                QuestionCardView(question: $question)
+                QuestionCardView(question: $question, action: {_ in })
                 remainingTimeView()
                 
             }
             
-            CustomTextField(placeHolder: "Mufti's Answer", text: $vm.muftiAnswer, isSecure: false)
-                .padding([.leading, .trailing])
-            
+            if question.openToAnswer ?? true {
+                muftiAnswerView()
+            }
+
             Spacer()
             
             VStack(spacing: 0) {
@@ -59,9 +65,6 @@ extension QuestionCommentView  {
                 commentList()
                 commentBtn()
             }
-            
-            
-            
         }
     }
 }
@@ -93,7 +96,7 @@ extension QuestionCommentView {
             Spacer()
             
             Button {
-                print("Share Btn")
+                isSharePresented.toggle()
             } label: {
                 Image(ImageName.shareBtn.rawValue)
                     .resizable()
@@ -124,6 +127,30 @@ extension QuestionCommentView {
             .padding()
     }
     
+    func muftiAnswerView() -> some View {
+        HStack(spacing: 0) {
+            
+            CustomTextField(placeHolder: "Mufti's Answer", text: $vm.muftiAnswer, isSecure: false)
+                .padding([.leading, .trailing])
+            
+            // show send button only when the user press the send button.
+            if !vm.muftiAnswer.isEmpty {
+                Button {
+                    // submit mufti answer to the server
+                    vm.muftiAnswer(question_id: question.questionID) {
+                        question.openToAnswer = false
+                    }
+                    
+                } label: {
+                    Image(ImageName.commentBtn.rawValue)
+                        .resizable()
+                        .frame(width: 45, height: 45)
+                }.transition(.scale)
+                    .padding([.trailing])
+            }
+        }
+    }
+    
     func seeAllcomment() -> some View {
         VStack {
             
@@ -132,16 +159,18 @@ extension QuestionCommentView {
                     .font(.custom(Popins.semiBold.rawValue, size: 14))
                 
                 Spacer()
-                
-                NavigationLink {
-                    Text("See All")
-                } label: {
-                    HStack {
-                        Text("See All")
-                            .font(.custom(Popins.semiBold.rawValue, size: 14))
-                        Image(ImageName.next_white.rawValue)
-                            .resizable()
-                            .frame(width: 9, height: 15)
+
+                if vm.comments.count != 0 {
+                    NavigationLink {
+                        HideNavbarOf(view: SeeAllCommentsView(comments: vm.comments))
+                    } label: {
+                        HStack {
+                            Text("See All")
+                                .font(.custom(Popins.semiBold.rawValue, size: 14))
+                            Image(ImageName.next_white.rawValue)
+                                .resizable()
+                                .frame(width: 9, height: 15)
+                        }
                     }
                 }
 
@@ -151,14 +180,23 @@ extension QuestionCommentView {
     }
     
     func commentList() -> some View {
-        ScrollView {
-            LazyVStack {
-                ForEach(vm.comments) { comment in
-                    CommentRow(comment: comment)
+        
+        ScrollViewReader { scrollView in
+            ScrollView(.vertical ,showsIndicators : false) {
+                    ForEach(vm.comments.indices, id: \.self) { index in
+                        CommentRow(comment: vm.comments[index])
+                            .id(index)
+                    }
+                    
+            }.onChange(of: vm.comments.count) { count in
+                withAnimation {
+                    scrollView.scrollTo(vm.comments.count - 1)
                 }
-                
             }
+            
         }.padding()
+        
+        
     }
     
     func commentBtn() -> some View {
@@ -198,6 +236,9 @@ extension QuestionCommentView {
             
         }.padding([.leading, .trailing])
     }
+    
+    
+    // UIActivity Controller
     
 }
 

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7A0CBFC82873253500101B0B /* PostQuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0CBFC72873253500101B0B /* PostQuestionViewModel.swift */; };
+		7A11A00F287592620099364A /* AllQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11A00E287592620099364A /* AllQuestionView.swift */; };
+		7A11A0122875952C0099364A /* WhiteQuestionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11A0112875952C0099364A /* WhiteQuestionCardView.swift */; };
+		7A11A0142875BE980099364A /* SeeAllCommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11A0132875BE980099364A /* SeeAllCommentsView.swift */; };
 		7A2A9B1928608DF900224E2D /* myMuftiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A9B1828608DF900224E2D /* myMuftiApp.swift */; };
 		7A2A9B1B28608DF900224E2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A9B1A28608DF900224E2D /* ContentView.swift */; };
 		7A2A9B1D28608DFD00224E2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2A9B1C28608DFD00224E2D /* Assets.xcassets */; };
@@ -136,6 +139,9 @@
 
 /* Begin PBXFileReference section */
 		7A0CBFC72873253500101B0B /* PostQuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostQuestionViewModel.swift; sourceTree = "<group>"; };
+		7A11A00E287592620099364A /* AllQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllQuestionView.swift; sourceTree = "<group>"; };
+		7A11A0112875952C0099364A /* WhiteQuestionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteQuestionCardView.swift; sourceTree = "<group>"; };
+		7A11A0132875BE980099364A /* SeeAllCommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllCommentsView.swift; sourceTree = "<group>"; };
 		7A2A9B1528608DF900224E2D /* myMufti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myMufti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2A9B1828608DF900224E2D /* myMuftiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myMuftiApp.swift; sourceTree = "<group>"; };
 		7A2A9B1A28608DF900224E2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -295,6 +301,23 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		7A11A00D287591AE0099364A /* AllQuestionView */ = {
+			isa = PBXGroup;
+			children = (
+				7A11A010287595120099364A /* WhiteQuestionCardView */,
+				7A11A00E287592620099364A /* AllQuestionView.swift */,
+			);
+			path = AllQuestionView;
+			sourceTree = "<group>";
+		};
+		7A11A010287595120099364A /* WhiteQuestionCardView */ = {
+			isa = PBXGroup;
+			children = (
+				7A11A0112875952C0099364A /* WhiteQuestionCardView.swift */,
+			);
+			path = WhiteQuestionCardView;
+			sourceTree = "<group>";
+		};
 		7A2A9B0C28608DF900224E2D = {
 			isa = PBXGroup;
 			children = (
@@ -421,6 +444,7 @@
 		7A2A9B4E28608ED800224E2D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7A11A00D287591AE0099364A /* AllQuestionView */,
 				7A4F429E28743F2700B10DAC /* QuestionComment */,
 				7AB53ED8287427A8009F9A04 /* Splash */,
 				7A0CBFC32873249000101B0B /* PostQuestion */,
@@ -666,6 +690,7 @@
 				7A4F42A428745AFE00B10DAC /* ViewModel */,
 				7A4F42A12874528000B10DAC /* CommentRow */,
 				7A4F429F28743F5000B10DAC /* QuestionCommentView.swift */,
+				7A11A0132875BE980099364A /* SeeAllCommentsView.swift */,
 			);
 			path = QuestionComment;
 			sourceTree = "<group>";
@@ -1188,6 +1213,7 @@
 				7A5BDF4E28648418001676B4 /* CreateNewPasswordView.swift in Sources */,
 				7A2A9B6C28608FB100224E2D /* TabBarControllerView.swift in Sources */,
 				7A2B10492873010D007FBA73 /* GifImage.swift in Sources */,
+				7A11A0122875952C0099364A /* WhiteQuestionCardView.swift in Sources */,
 				7A2A9B5D28608EED00224E2D /* HideNavbarOf.swift in Sources */,
 				7AB53ECE2873FE10009F9A04 /* MovetoNextRow.swift in Sources */,
 				7AD24D09286597560056EE6D /* ActivityViewController.swift in Sources */,
@@ -1197,6 +1223,7 @@
 				7AA1AD592869D83A00ADF2CA /* FilterViewModel.swift in Sources */,
 				7AD24D0328658CFE0056EE6D /* HelpView.swift in Sources */,
 				7A5BDF162861AC74001676B4 /* ChangeUserName.swift in Sources */,
+				7A11A00F287592620099364A /* AllQuestionView.swift in Sources */,
 				7A4F42A32874529500B10DAC /* CommentRow.swift in Sources */,
 				7A2A9B4028608E5900224E2D /* Constants.swift in Sources */,
 				7A2A9B3B28608E5900224E2D /* DateManager.swift in Sources */,
@@ -1225,6 +1252,7 @@
 				7A2A9B6828608F6100224E2D /* LoginView.swift in Sources */,
 				7A5BDF4828646A76001676B4 /* OTPView.swift in Sources */,
 				7A2A9B752860907700224E2D /* ProfileView.swift in Sources */,
+				7A11A0142875BE980099364A /* SeeAllCommentsView.swift in Sources */,
 				7A2A9B3A28608E5900224E2D /* NetworkManager.swift in Sources */,
 				7A2A9B5F28608EED00224E2D /* CustomTextField.swift in Sources */,
 				7AA1AD512869AF6200ADF2CA /* AskQuestionViewModel.swift in Sources */,
@@ -1412,7 +1440,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"myMufti/Preview Content\"";
-				DEVELOPMENT_TEAM = 6ZCWPYVSWH;
+				DEVELOPMENT_TEAM = BS98TAD573;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = myMufti/Info.plist;
@@ -1443,7 +1471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"myMufti/Preview Content\"";
-				DEVELOPMENT_TEAM = 6ZCWPYVSWH;
+				DEVELOPMENT_TEAM = BS98TAD573;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = myMufti/Info.plist;

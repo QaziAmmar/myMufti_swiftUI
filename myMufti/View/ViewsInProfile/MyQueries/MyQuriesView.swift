@@ -38,7 +38,10 @@ extension MyQuriesView {
                         .font(.custom(Popins.regular.rawValue, size: 24))
                 } else {
                     ForEach($vm.myQueries) { myQuery in
-                        MyQueryRow(query: myQuery)
+                        MyQueryRow(query: myQuery) { status in
+                            
+                            vm.postQuestionStatusAPI(question: myQuery.wrappedValue, status: status)
+                        }
                     }
                 }
             }

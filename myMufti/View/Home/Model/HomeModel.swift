@@ -24,6 +24,10 @@ struct QuestionModel: Codable, Identifiable {
     let questionCategories: [QuestionCategory]
     let questionComment, totalVote, totalVoteForYes, totalVoteForNo: Int
     
+    var voteDisable: Bool? = false
+    var openToAnswer: Bool? = true
+    
+    
     var createAgo: String {
         DateManager.standard.timeAgoDisplay(from: createdAt)
     }
@@ -48,9 +52,27 @@ struct QuestionModel: Codable, Identifiable {
         if noPercentage.isNaN {
             return "0 %"
         } else {
+            
             return "\(noPercentage.cleanValue) %"
         }
-        
+    }
+    
+    var yesNormilized: Double {
+        let yesPercentage = (Double(totalVoteForYes) / Double(totalVote))
+        if yesPercentage.isNaN {
+            return 0.0
+        } else {
+            return (yesPercentage * 0.75)
+        }
+    }
+    
+    var noNormilized: Double {
+        let noPercentage = (Double(totalVoteForNo) / Double(totalVote))
+        if noPercentage.isNaN {
+            return 0.0
+        } else {
+            return (noPercentage * 0.75)
+        }
     }
     
 
@@ -84,6 +106,6 @@ struct QuestionCategory: Codable {
 
 extension Double {
     var cleanValue: String {
-           return self.truncatingRemainder(dividingBy: 1) == 0 ? String(format: "%.0f", self) : String(self)
+           return String(format: "%.0f", self)
        }
 }

@@ -15,7 +15,9 @@ struct HomeView: View {
     @StateObject var vm = HomeViewModel()
     @State private var date = Date()
     @State private var tabSelection_userId = 0
+    @State private var seletedQuestionIndex = 0
     @State private var movetoBecomeMufti = false
+    @State private var movetoQuestionComment = false
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
@@ -49,28 +51,60 @@ extension HomeView  {
             homeNav()
             bannerView()
             postQuestion()
+            hiddenNavLink()
             
             TabView(selection: $tabSelection_userId) {
 
-                ForEach($vm.questions) { question in
-                    NavigationLink {
-                        HideNavbarOf(view: QuestionCommentView(question: question))
-                    } label: {
-                        QuestionCardView(question: question)
-                            .padding()
-                    }
+                ForEach(vm.questions.indices, id: \.self) { index in
+                    
+                    QuestionCardView(question: $vm.questions[index], action: { vote in
+                        // calling viewModel for setting up the Vote for use
+                        vm.userVoteForQuestion(question_index: index, vote: vote)
+                        
+                    })
+                        .onTapGesture {
+                            seletedQuestionIndex = index
+                            movetoQuestionComment = true
+                        }
+                        .padding()
+                        
                 }
                     
             } //: TabView
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             
             
-            GreenBtn(action: {
-                print("see all btn")
-            }, title: "See All")
-            .padding()
+            NavigationLink {
+                HideNavbarOf(view: AllQuestionView(questions: vm.questions))
+            } label: {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 5)
+                        .frame(height: 50)
+                        .foregroundColor(Color(ColorName.appGreen.rawValue))
+                    Text("See all")
+                        .foregroundColor(.white)
+                        .font(Font.custom(Popins.bold.rawValue, size: 18))
+                }
+                .padding()
+            }
+
         }
     }
+    
+    func hiddenNavLink() -> some View {
+        VStack {
+            
+            NavigationLink(isActive: $movetoQuestionComment) {
+                if vm.questions.count != 0 {
+                    HideNavbarOf(view: QuestionCommentView(question: $vm.questions[seletedQuestionIndex]))
+                }
+            } label: {
+                EmptyView()
+            }
+
+        }.hidden()
+    }
+    
 }
 
 

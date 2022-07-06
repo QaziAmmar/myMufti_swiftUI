@@ -34,7 +34,7 @@ extension CommentRow {
                     .foregroundColor(.white)
                 
                 HStack(alignment: .top) {
-                    VStack(spacing: 5) {
+                    VStack(alignment: .leading, spacing: 5) {
                         Text(comment.userID?.name ?? "")
                             .font(.custom(Popins.medium.rawValue, size: 11))
                         Text(comment.comment)
